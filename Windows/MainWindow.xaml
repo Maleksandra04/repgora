@@ -1,0 +1,34 @@
+﻿<Window x:Class="Elbrus_region.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Elbrus_region"
+        Icon="/Windows/logo.ico"
+        mc:Ignorable="d"
+        Title="Приэльбрусье" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Background="#76e383" Orientation="Horizontal" Margin="0,0,-0.4,0">
+            <Image Source="..//Windows/logo.png" HorizontalAlignment="Left" Margin="45,0,0,0"></Image>
+            <TextBlock Text="Горнолыжный курорт ПРИЭЛЬБРУСЬЕ" FontSize="25" FontFamily="candara" Margin="50,0,0,0" VerticalAlignment="Center"/>
+            <Button x:Name="BtnBack" Content="Назад" Margin="30,0,0,0" Click="BtnBack_Click" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Background="#76e383" Orientation="Horizontal" Margin="0,0,-0.4,0">
+            <Button x:Name="BtnExit" Content="Выход" Margin="600,0,0,0" Click="BtnExit_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Margin="0,0,-0.4,0" >
+            <Image Source="/Windows/logo.png" Opacity="0.2" Width="450"/>
+        </StackPanel>
+
+        <Frame x:Name="FrmMain" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="FrmMain_ContentRendered" />
+        
+    </Grid>
+</Window>

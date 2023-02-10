@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6a38786031b34c498e4df7b4d8a3b902" Name="Diagram1">
+        <EntityTypeShape EntityType="GoraModel.Client" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoraModel.Roli" Width="1.5" PointX="5.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoraModel.Sostav_uslugi" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoraModel.Sotrudniki" Width="1.5" PointX="8" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoraModel.Status_zakaz" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoraModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoraModel.Uslugi" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoraModel.Vchod_tip" Width="1.5" PointX="5.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoraModel.Zakaz" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="GoraModel.FK_Zakaz_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="GoraModel.FK_Sotrudniki_Roli" ManuallyRouted="false" />
+        <AssociationConnector Association="GoraModel.FK_Sostav_uslugi_Uslugi" ManuallyRouted="false" />
+        <AssociationConnector Association="GoraModel.FK_Sostav_uslugi_Zakaz" ManuallyRouted="false" />
+        <AssociationConnector Association="GoraModel.FK_Sotrudniki_Vchod_tip" ManuallyRouted="false" />
+        <AssociationConnector Association="GoraModel.FK_Zakaz_Status_zakaz" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
